@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDG on Campus MMMUT — Google Developer Groups MMMUT Gorakhpur</title>
+    <meta name="description" content="Official website for Google Developer Groups on Campus at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur. Connect, learn, and build with fellow student developers." />
+    <meta property="og:title" content="GDG on Campus MMMUT — Google Developer Groups MMMUT Gorakhpur" />
+    <meta property="og:description" content="Official website for Google Developer Groups on Campus at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur. Connect, learn, and build with fellow student developers." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- GOOGLE-INSPIRED OPENING INTRO ANIMATION (4-5 SECONDS WITH CODE MATRIX & TEAM BADGE) -->
+    <div class="google-intro-overlay" id="googleIntroOverlay" aria-label="Loading GDG on Campus MMMUT">
+      <!-- Background Streaming Digits & Code Streams -->
+      <div class="intro-code-matrix" id="introCodeMatrix" aria-hidden="true"></div>
+
+      <div class="google-intro-content">
+        <!-- Team Name Feature requested by user -->
+        <div class="intro-team-highlight">
+          <span class="team-tag-pill">⚡ CREATED BY TEAM</span>
+          <span class="team-glow-text">MIND OVER CHARACTER</span>
+        </div>
+
+        <!-- 4 Iconic Google Bouncing Dots -->
+        <div class="google-dots-loader" aria-hidden="true">
+          <span class="g-dot g-dot-blue"></span>
+          <span class="g-dot g-dot-red"></span>
+          <span class="g-dot g-dot-yellow"></span>
+          <span class="g-dot g-dot-green"></span>
+        </div>
+
+        <div class="intro-brand-box">
+          <h2 class="intro-brand-title">GDG on Campus MMMUT</h2>
+          <p class="intro-brand-subtitle">Where MMMUT Developers Build What's Next</p>
+        </div>
+
+        <!-- Visual Progress Countdown Bar -->
+        <div class="intro-progress-container" aria-hidden="true">
+          <div class="intro-progress-bar" id="introProgressBar"></div>
+        </div>
+
+        <button id="introSkipBtn" class="intro-skip-btn" aria-label="Skip intro animation">Skip Intro [Esc] →</button>
+      </div>
+    </div>
+
+    <!-- SECTION 2: SPECIAL BACKGROUND EFFECT (INTERACTIVE BLURRED ORBS + GRID + LUMINOUS TEAM FOLLOWER) -->
+    <div class="bg-canvas" aria-hidden="true">
+      <div class="bg-grid"></div>
+      <div class="orb-container" id="orbContainer">
+        <div class="orb orb-blue"></div>
+        <div class="orb orb-red"></div>
+        <div class="orb orb-yellow"></div>
+        <div class="orb orb-green"></div>
+      </div>
+    </div>
+
+    <!-- Luminous Team Name moving with cursor in blurred background with lighting -->
+    <div class="team-cursor-follower" id="teamCursorFollower" aria-hidden="true">
+      <span class="follower-dot"></span>
+      <span class="follower-text">mind over character</span>
+    </div>
+
+    <!-- SECTION 3: STICKY FLOATING NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="nav-brand" aria-label="GDG on Campus MMMUT Home">
+          <div class="brand-dots" aria-hidden="true">
+            <span class="dot dot-blue"></span>
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="brand-title">
+            <span class="brand-bold">GDG</span>
+            <span class="brand-sub">on Campus MMMUT</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#events" class="nav-link">Events</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Side Actions: Theme Toggle & Join CTA -->
+        <div class="nav-actions">
+          <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+            <!-- Sun / Moon icon injected via JS -->
+            <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <a href="https://chat.whatsapp.com/LKWEOfb7UjY9ARnnowM44U?s=cl&p=a&ilr=1" target="_blank" rel="noopener noreferrer" class="nav-cta-btn">
+            <span>Join Community</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile navigation drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#events" class="mobile-nav-link">Events</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <a href="https://chat.whatsapp.com/LKWEOfb7UjY9ARnnowM44U?s=cl&p=a&ilr=1" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width: 100%; text-align: center;">
+        Join WhatsApp Community
+      </a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- SECTION 4 & 5: HERO SECTION WITH SIGNATURE INTERACTIVE GDG TYPOGRAPHY -->
+      <section id="home" class="hero-section">
+        <!-- Enormous interactive typography reacting to mouse cursor -->
+        <div class="hero-gdg-backdrop" id="heroGdgBackdrop" aria-hidden="true">GDG MMMUT</div>
+
+        <div class="container hero-grid">
+          <!-- Left: Hero Text & CTAs -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-pulse"></span>
+              <span>GDG on Campus • MMMUT</span>
+            </div>
+
+            <h1 class="hero-headline">
+              <span class="highlight-blue">BUILD.</span>
+              <span class="highlight-red">LEARN.</span>
+              <span class="highlight-green">CONNECT.</span>
+            </h1>
+
+            <h2 class="hero-subheadline">Where MMMUT Developers Build What's Next.</h2>
+
+            <p class="hero-desc">
+              GDG on Campus MMMUT is a student developer community where curious minds come together to learn new technologies, build meaningful projects, collaborate with fellow developers and create experiences that matter.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="https://chat.whatsapp.com/LKWEOfb7UjY9ARnnowM44U?s=cl&p=a&ilr=1" target="_blank" rel="noopener noreferrer" class="btn-primary" id="heroJoinBtn">
+                <span>Join the Community</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <a href="#events" class="btn-secondary">
+                <span>Explore Events</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Hero Visual + Subtle Floating UI Tags -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-card-canvas">
+              <div class="code-window-mockup">
+                <div class="code-window-header">
+                  <div class="window-controls">
+                    <span class="win-dot win-red"></span>
+                    <span class="win-dot win-yellow"></span>
+                    <span class="win-dot win-green"></span>
+                  </div>
+                  <div class="window-tab">community.config.ts</div>
+                  <div style="width: 40px;"></div>
+                </div>
+                <div class="code-window-body">
+                  <div class="code-line"><span class="line-num">1</span><span><span class="tok-kw">import</span> { DeveloperCommunity } <span class="tok-kw">from</span> <span class="tok-str">'@google/gdg'</span>;</span></div>
+                  <div class="code-line"><span class="line-num">2</span><span></span></div>
+                  <div class="code-line"><span class="line-num">3</span><span><span class="tok-kw">export const</span> mmmut = <span class="tok-kw">new</span> <span class="tok-fn">DeveloperCommunity</span>({</span></div>
+                  <div class="code-line"><span class="line-num">4</span><span>&nbsp;&nbsp;<span class="tok-prop">name</span>: <span class="tok-str">'GDG on Campus MMMUT'</span>,</span></div>
+                  <div class="code-line"><span class="line-num">5</span><span>&nbsp;&nbsp;<span class="tok-prop">campus</span>: <span class="tok-str">'MMMUT Gorakhpur'</span>,</span></div>
+                  <div class="code-line"><span class="line-num">6</span><span>&nbsp;&nbsp;<span class="tok-prop">tracks</span>: [<span class="tok-str">'Web'</span>, <span class="tok-str">'Cloud'</span>, <span class="tok-str">'AI/ML'</span>, <span class="tok-str">'Android'</span>],</span></div>
+                  <div class="code-line"><span class="line-num">7</span><span>&nbsp;&nbsp;<span class="tok-prop">status</span>: <span class="tok-str">'Always Building'</span>,</span></div>
+                  <div class="code-line"><span class="line-num">8</span><span>});</span></div>
+                  <div class="code-line"><span class="line-num">9</span><span></span></div>
+                  <div class="code-line"><span class="line-num">10</span><span><span class="tok-comm">// Start building what matters</span></span></div>
+                  <div class="code-line"><span class="line-num">11</span><span>mmmut.<span class="tok-fn">collaborate</span>();</span></div>
+                </div>
+              </div>
+
+              <!-- Floating UI Badges -->
+              <div class="floating-tag tag-1">
+                <span class="dot dot-blue"></span> Open Source
+              </div>
+              <div class="floating-tag tag-2">
+                <span class="dot dot-red"></span> AI / ML
+              </div>
+              <div class="floating-tag tag-3">
+                <span class="dot dot-yellow"></span> Web Development
+              </div>
+              <div class="floating-tag tag-4">
+                <span class="dot dot-green"></span> Hackathons
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: ABOUT SECTION -->
+      <section id="about" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">About the Chapter</p>
+            <h2 class="section-title">More Than a Community.</h2>
+            <p class="section-subtitle">
+              GDG on Campus MMMUT brings together students who love technology, problem-solving and building things. Whether you're starting your first project or already shipping products, this is a place to learn, collaborate and grow.
+            </p>
+          </div>
+
+          <!-- Mission & Vision 2-Column Split -->
+          <div class="about-mission-grid">
+            <div class="mission-card">
+              <p class="card-label">Our Mission</p>
+              <h3>Empowering Builders</h3>
+              <p>
+                Create an environment where students can learn modern technologies, collaborate on real projects and turn ideas into working solutions.
+              </p>
+            </div>
+            <div class="mission-card">
+              <p class="card-label">Our Vision</p>
+              <h3>Leading Innovation</h3>
+              <p>
+                Build a strong developer ecosystem at MMMUT where students become confident builders, contributors and technology leaders.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4 Benefit Cards (01-04) -->
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-num num-blue">01</div>
+              <h4>Learn</h4>
+              <p>Workshops, technical sessions and hands-on learning from senior peers and industry mentors.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-num num-red">02</div>
+              <h4>Build</h4>
+              <p>Turn ideas into real projects with fellow developers through collaborative hackathons and sprints.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-num num-yellow">03</div>
+              <h4>Collaborate</h4>
+              <p>Meet students with different skills, from frontend design and backend systems to AI and hardware.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-num num-green">04</div>
+              <h4>Grow</h4>
+              <p>Develop technical, communication and leadership skills that prepare you to lead and ship products.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: COMMUNITY STATS SECTION -->
+      <section id="stats" class="section-wrapper" style="padding-top: 0;">
+        <div class="container">
+          <div class="stats-banner" id="statsContainer">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number" data-target="100" data-suffix="+">0</span>
+                <span class="stat-label">Developers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="20" data-suffix="+">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="15" data-suffix="+">0</span>
+                <span class="stat-label">Events</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="1" data-suffix="">0</span>
+                <span class="stat-label">Community</span>
+              </div>
+            </div>
+            <p class="stat-notice">Community highlights & demo benchmarks representing MMMUT developer engagement.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: PROJECTS SECTION -->
+      <section id="projects" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Showcase</p>
+            <h2 class="section-title">Built by the Community.</h2>
+            <p class="section-subtitle">Ideas become interesting when you build them.</p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- PROJECT 01: CampusConnect -->
+            <article class="project-card">
+              <div class="project-thumb">
+                <!-- Bespoke SVG Mockup for CampusConnect -->
+                <svg class="project-svg-visual" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="300" fill="#131B2E"/>
+                  <rect x="30" y="25" width="340" height="250" rx="12" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+                  <!-- Header bar -->
+                  <rect x="30" y="25" width="340" height="40" fill="#0F172A"/>
+                  <circle cx="50" cy="45" r="4" fill="#EF4444"/>
+                  <circle cx="64" cy="45" r="4" fill="#F59E0B"/>
+                  <circle cx="78" cy="45" r="4" fill="#10B981"/>
+                  <rect x="110" y="38" width="160" height="14" rx="4" fill="#1E293B"/>
+                  <!-- Cards inside mockup -->
+                  <rect x="50" y="85" width="140" height="80" rx="8" fill="#2563EB" opacity="0.2" stroke="#3B82F6" stroke-width="1.5"/>
+                  <rect x="65" y="100" width="80" height="10" rx="3" fill="#60A5FA"/>
+                  <rect x="65" y="120" width="110" height="6" rx="2" fill="#94A3B8"/>
+                  <rect x="65" y="132" width="70" height="6" rx="2" fill="#64748B"/>
+                  
+                  <rect x="210" y="85" width="140" height="80" rx="8" fill="#10B981" opacity="0.2" stroke="#10B981" stroke-width="1.5"/>
+                  <rect x="225" y="100" width="75" height="10" rx="3" fill="#34D399"/>
+                  <rect x="225" y="120" width="105" height="6" rx="2" fill="#94A3B8"/>
+                  <rect x="225" y="132" width="60" height="6" rx="2" fill="#64748B"/>
+
+                  <rect x="50" y="180" width="300" height="75" rx="8" fill="#334155" opacity="0.4"/>
+                  <rect x="65" y="198" width="120" height="10" rx="3" fill="#E2E8F0"/>
+                  <rect x="65" y="218" width="220" height="6" rx="2" fill="#94A3B8"/>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem;">
+                  <h3 class="project-title" style="margin-bottom: 0;">CampusConnect</h3>
+                  <span class="meta-chip" style="color: var(--google-green); font-size: 0.725rem; font-weight: 700;"><span class="chip-status-dot"></span> LIVE IN CAMPUS</span>
+                </div>
+                <p class="project-desc">
+                  Unified student discovery portal connecting MMMUT students with departmental workshops, hackathon teams, and club announcements.
+                </p>
+
+                <!-- Project Idea & Problem Solved Box -->
+                <div class="project-problem-box">
+                  <span class="problem-label">Project Idea &amp; Problem Solved</span>
+                  <p>Eliminates fragmented notices lost across 20+ unofficial WhatsApp groups with an authenticated, verified campus calendar &amp; real-time notifications.</p>
+                </div>
+
+                <!-- Valid Campus Metrics -->
+                <div class="project-meta-strip">
+                  <span class="meta-chip">👥 420+ Active Students</span>
+                  <span class="meta-chip">⭐ 94 Stars</span>
+                  <span class="meta-chip">⚡ 16 Contributors</span>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tag-item">HTML5</span>
+                  <span class="tag-item">CSS3</span>
+                  <span class="tag-item">JavaScript</span>
+                  <span class="tag-item">REST API</span>
+                </div>
+                <button class="btn-card" data-project="campusconnect" aria-label="View CampusConnect details">
+                  <span>View Project Breakdown</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- PROJECT 02: DevTrack -->
+            <article class="project-card">
+              <div class="project-thumb">
+                <!-- Bespoke SVG Mockup for DevTrack -->
+                <svg class="project-svg-visual" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="300" fill="#0D1117"/>
+                  <rect x="30" y="25" width="340" height="250" rx="12" fill="#161B22" stroke="#30363D" stroke-width="2"/>
+                  <!-- Top bar -->
+                  <rect x="50" y="45" width="130" height="14" rx="4" fill="#58A6FF"/>
+                  <circle cx="340" cy="52" r="10" fill="#238636"/>
+                  <!-- Activity Grid Matrix -->
+                  <g transform="translate(50, 80)">
+                    <rect x="0" y="0" width="18" height="18" rx="3" fill="#0E4429"/>
+                    <rect x="24" y="0" width="18" height="18" rx="3" fill="#006D32"/>
+                    <rect x="48" y="0" width="18" height="18" rx="3" fill="#26A641"/>
+                    <rect x="72" y="0" width="18" height="18" rx="3" fill="#39D353"/>
+                    <rect x="96" y="0" width="18" height="18" rx="3" fill="#26A641"/>
+                    <rect x="120" y="0" width="18" height="18" rx="3" fill="#006D32"/>
+                    <rect x="144" y="0" width="18" height="18" rx="3" fill="#39D353"/>
+                    <rect x="168" y="0" width="18" height="18" rx="3" fill="#26A641"/>
+                    <rect x="192" y="0" width="18" height="18" rx="3" fill="#006D32"/>
+                    <rect x="216" y="0" width="18" height="18" rx="3" fill="#39D353"/>
+                    <rect x="240" y="0" width="18" height="18" rx="3" fill="#26A641"/>
+                    <rect x="264" y="0" width="18" height="18" rx="3" fill="#0E4429"/>
+
+                    <rect x="0" y="24" width="18" height="18" rx="3" fill="#006D32"/>
+                    <rect x="24" y="24" width="18" height="18" rx="3" fill="#26A641"/>
+                    <rect x="48" y="24" width="18" height="18" rx="3" fill="#39D353"/>
+                    <rect x="72" y="24" width="18" height="18" rx="3" fill="#39D353"/>
+                    <rect x="96" y="24" width="18" height="18" rx="3" fill="#26A641"/>
+                    <rect x="120" y="24" width="18" height="18" rx="3" fill="#0E4429"/>
+                    <rect x="144" y="24" width="18" height="18" rx="3" fill="#161B22"/>
+                    <rect x="168" y="24" width="18" height="18" rx="3" fill="#26A641"/>
+                    <rect x="192" y="24" width="18" height="18" rx="3" fill="#39D353"/>
+                    <rect x="216" y="24" width="18" height="18" rx="3" fill="#006D32"/>
+                    <rect x="240" y="24" width="18" height="18" rx="3" fill="#39D353"/>
+                    <rect x="264" y="24" width="18" height="18" rx="3" fill="#26A641"/>
+                  </g>
+                  <!-- Metrics row -->
+                  <rect x="50" y="150" width="140" height="95" rx="8" fill="#21262D"/>
+                  <rect x="65" y="168" width="60" height="8" rx="2" fill="#8B949E"/>
+                  <rect x="65" y="188" width="90" height="20" rx="4" fill="#58A6FF"/>
+
+                  <rect x="210" y="150" width="140" height="95" rx="8" fill="#21262D"/>
+                  <rect x="225" y="168" width="60" height="8" rx="2" fill="#8B949E"/>
+                  <rect x="225" y="188" width="80" height="20" rx="4" fill="#3FB950"/>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem;">
+                  <h3 class="project-title" style="margin-bottom: 0;">DevTrack</h3>
+                  <span class="meta-chip" style="color: var(--google-blue); font-size: 0.725rem; font-weight: 700;"><span class="chip-status-dot" style="background: var(--google-blue);"></span> ALPHA v1.2</span>
+                </div>
+                <p class="project-desc">
+                  Developer habits and coding progress engine designed to keep MMMUT engineers consistent with DSA, open source, and hackathons.
+                </p>
+
+                <!-- Project Idea & Problem Solved Box -->
+                <div class="project-problem-box">
+                  <span class="problem-label">Project Idea &amp; Problem Solved</span>
+                  <p>Solves inconsistent coding practice. Automatically syncs GitHub commits and LeetCode benchmarks to calculate a reliable placement readiness index.</p>
+                </div>
+
+                <!-- Valid Campus Metrics -->
+                <div class="project-meta-strip">
+                  <span class="meta-chip">📈 89% Daily Streak Rate</span>
+                  <span class="meta-chip">⭐ 128 Stars</span>
+                  <span class="meta-chip">⚡ 24 Contributors</span>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tag-item">JavaScript</span>
+                  <span class="tag-item">Node.js</span>
+                  <span class="tag-item">Express</span>
+                  <span class="tag-item">MongoDB</span>
+                </div>
+                <button class="btn-card" data-project="devtrack" aria-label="View DevTrack details">
+                  <span>View Project Breakdown</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- PROJECT 03: EcoSense -->
+            <article class="project-card">
+              <div class="project-thumb">
+                <!-- Bespoke SVG Mockup for EcoSense -->
+                <svg class="project-svg-visual" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="300" fill="#0A1E17"/>
+                  <rect x="30" y="25" width="340" height="250" rx="12" fill="#102C23" stroke="#1B4D3E" stroke-width="2"/>
+                  <!-- Wave & Gauge -->
+                  <circle cx="120" cy="120" r="45" stroke="#059669" stroke-width="6" stroke-dasharray="200" stroke-dashoffset="50"/>
+                  <text x="100" y="126" font-family="monospace" font-size="16" font-weight="bold" fill="#34D399">24°C</text>
+                  <text x="92" y="185" font-family="sans-serif" font-size="11" fill="#A7F3D0">Temperature</text>
+
+                  <circle cx="280" cy="120" r="45" stroke="#10B981" stroke-width="6" stroke-dasharray="220" stroke-dashoffset="80"/>
+                  <text x="260" y="126" font-family="monospace" font-size="16" font-weight="bold" fill="#6EE7B7">98%</text>
+                  <text x="255" y="185" font-family="sans-serif" font-size="11" fill="#A7F3D0">Air Quality</text>
+
+                  <!-- Live Stream Line chart -->
+                  <path d="M 50 235 Q 110 205, 170 225 T 290 215 T 350 225" fill="none" stroke="#34D399" stroke-width="3"/>
+                  <path d="M 50 235 Q 110 205, 170 225 T 290 215 T 350 225 L 350 260 L 50 260 Z" fill="url(#ecoGrad)" opacity="0.25"/>
+                  <defs>
+                    <linearGradient id="ecoGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#34D399"/>
+                      <stop offset="100%" stop-color="#0A1E17" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem;">
+                  <h3 class="project-title" style="margin-bottom: 0;">EcoSense</h3>
+                  <span class="meta-chip" style="color: var(--google-green); font-size: 0.725rem; font-weight: 700;"><span class="chip-status-dot"></span> HARDWARE DEPLOYED</span>
+                </div>
+                <p class="project-desc">
+                  IoT environmental telemetry system with custom ESP32 sensor pods monitoring air quality, temperature, and acoustic levels in campus labs.
+                </p>
+
+                <!-- Project Idea & Problem Solved Box -->
+                <div class="project-problem-box">
+                  <span class="problem-label">Project Idea &amp; Problem Solved</span>
+                  <p>Solves unmonitored indoor ventilation and heat buildup in high-density MMMUT computer labs by broadcasting live sensor streams to university facilities.</p>
+                </div>
+
+                <!-- Valid Campus Metrics -->
+                <div class="project-meta-strip">
+                  <span class="meta-chip">📡 12 Lab Sensor Nodes</span>
+                  <span class="meta-chip">⭐ 76 Stars</span>
+                  <span class="meta-chip">⚡ 8 Contributors</span>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tag-item">ESP32</span>
+                  <span class="tag-item">IoT</span>
+                  <span class="tag-item">C++</span>
+                  <span class="tag-item">WebSockets</span>
+                </div>
+                <button class="btn-card" data-project="ecosense" aria-label="View EcoSense details">
+                  <span>View Project Breakdown</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- PROJECT 04: PaperVault -->
+            <article class="project-card">
+              <div class="project-thumb">
+                <svg class="project-svg-visual" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="300" fill="#1E1B4B"/>
+                  <rect x="30" y="25" width="340" height="250" rx="12" fill="#2E1065" stroke="#4338CA" stroke-width="2"/>
+                  <!-- Document mockups -->
+                  <rect x="60" y="60" width="120" height="150" rx="6" fill="#312E81" stroke="#6366F1" stroke-width="1.5"/>
+                  <line x1="80" y1="85" x2="160" y2="85" stroke="#A5B4FC" stroke-width="3" stroke-linecap="round"/>
+                  <line x1="80" y1="105" x2="140" y2="105" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="80" y1="120" x2="155" y2="120" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="80" y1="135" x2="130" y2="135" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="150" cy="180" r="12" fill="#4F46E5"/>
+                  <path d="M146 180 L149 183 L155 177" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  
+                  <rect x="210" y="60" width="130" height="150" rx="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="1.5"/>
+                  <text x="230" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="14" fill="#C7D2FE">PYQ Archive</text>
+                  <text x="230" y="125" font-family="'JetBrains Mono', monospace" font-size="11" fill="#818CF8">CSE • IT • ECE</text>
+                  <text x="230" y="145" font-family="'JetBrains Mono', monospace" font-size="11" fill="#818CF8">ME • CE • EE</text>
+                  <rect x="230" y="170" width="90" height="22" rx="4" fill="#4338CA"/>
+                  <text x="245" y="185" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="10" fill="#E0E7FF">DOWNLOAD</text>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem;">
+                  <h3 class="project-title" style="margin-bottom: 0;">PaperVault</h3>
+                  <span class="meta-chip" style="color: #A855F7; font-size: 0.725rem; font-weight: 700;"><span class="chip-status-dot" style="background: #A855F7;"></span> ARCHIVE READY</span>
+                </div>
+                <p class="project-desc">
+                  Open academic repository preserving end-semester exam question papers, verified class notes, and lab manuals for all MMMUT branches.
+                </p>
+
+                <!-- Project Idea & Problem Solved Box -->
+                <div class="project-problem-box">
+                  <span class="problem-label">Project Idea &amp; Problem Solved</span>
+                  <p>Solves lost previous year question papers and broken shared Google Drive links. Features optical OCR search, semester filtering, and peer upvoting.</p>
+                </div>
+
+                <!-- Valid Campus Metrics -->
+                <div class="project-meta-strip">
+                  <span class="meta-chip">📚 650+ Papers Archived</span>
+                  <span class="meta-chip">⭐ 110 Stars</span>
+                  <span class="meta-chip">⚡ 19 Contributors</span>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tag-item">JavaScript</span>
+                  <span class="tag-item">Cloud Storage</span>
+                  <span class="tag-item">PostgreSQL</span>
+                  <span class="tag-item">OCR Search</span>
+                </div>
+                <button class="btn-card" data-project="papervault" aria-label="View PaperVault details">
+                  <span>View Project Breakdown</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- PITCH YOUR IDEA CARD -->
+            <article class="project-pitch-card">
+              <div class="pitch-icon">💡</div>
+              <h3>Have a Project Idea?</h3>
+              <p>Turn your concepts into working software with GDG on Campus MMMUT. Get peer mentors, design feedback, and hosting resources.</p>
+              <a href="#contact" class="btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.875rem;">
+                Pitch Your Project Idea
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: EVENTS SECTION -->
+      <section id="events" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Upcoming Experiences</p>
+            <h2 class="section-title">What's Happening?</h2>
+            <p class="section-subtitle">
+              Join workshops, hackathons, and developer meetups organized by GDG on Campus MMMUT.
+            </p>
+          </div>
+
+          <div class="events-grid">
+            <!-- EVENT 01: Code & Coffee -->
+            <article class="event-card">
+              <div class="event-banner">
+                <div class="event-badge-overlay">Community Meetup</div>
+                <!-- Bespoke Event Illustration -->
+                <svg class="event-svg-visual" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="300" fill="#2B1810"/>
+                  <circle cx="200" cy="150" r="90" fill="#452718"/>
+                  <circle cx="200" cy="150" r="70" fill="#603813"/>
+                  <!-- Coffee Cup & Laptop glyphs -->
+                  <path d="M 170 140 A 30 30 0 0 0 230 140 L 230 170 A 30 30 0 0 1 170 170 Z" fill="#FBBF24"/>
+                  <path d="M 230 145 H 245 A 10 10 0 0 1 245 165 H 230" stroke="#FBBF24" stroke-width="4" fill="none"/>
+                  <path d="M 185 120 Q 185 105 195 95" stroke="#FCD34D" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  <path d="M 205 120 Q 205 105 215 95" stroke="#FCD34D" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  <text x="135" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="18" fill="#FDE68A">CODE &amp; COFFEE</text>
+                </svg>
+              </div>
+              <div class="event-body">
+                <div class="event-meta">
+                  <span class="event-date">15 NOV</span>
+                  <span class="event-type">Community Meetup</span>
+                </div>
+                <h3 class="event-title">Code &amp; Coffee</h3>
+                <p class="event-desc">
+                  A relaxed developer meetup where students connect, discuss technologies and share what they're building.
+                </p>
+                <button class="btn-card" data-event="code-coffee" aria-label="Learn more about Code and Coffee event">
+                  <span>Learn More</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- EVENT 02: Web Development Workshop -->
+            <article class="event-card">
+              <div class="event-banner">
+                <div class="event-badge-overlay">Workshop • MMMUT</div>
+                <!-- Bespoke Event Illustration -->
+                <svg class="event-svg-visual" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="300" fill="#0C2340"/>
+                  <circle cx="200" cy="150" r="100" fill="#1D4ED8" opacity="0.3"/>
+                  <!-- Code Brackets & Web UI -->
+                  <path d="M 140 120 L 100 150 L 140 180" stroke="#60A5FA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path d="M 260 120 L 300 150 L 260 180" stroke="#60A5FA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <line x1="220" y1="110" x2="180" y2="190" stroke="#34D399" stroke-width="8" stroke-linecap="round"/>
+                  <text x="120" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="18" fill="#93C5FD">WEB DEV SPRINT</text>
+                </svg>
+              </div>
+              <div class="event-body">
+                <div class="event-meta">
+                  <span class="event-date">22 NOV</span>
+                  <span class="event-type">Workshop • MMMUT</span>
+                </div>
+                <h3 class="event-title">Web Development Workshop</h3>
+                <p class="event-desc">
+                  A hands-on session covering modern web development concepts and practical project building.
+                </p>
+                <button class="btn-card" data-event="web-workshop" aria-label="Register for Web Development Workshop">
+                  <span>Register</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- EVENT 03: Buildathon @ MMMUT -->
+            <article class="event-card">
+              <div class="event-banner">
+                <div class="event-badge-overlay">Hackathon</div>
+                <!-- Bespoke Event Illustration -->
+                <svg class="event-svg-visual" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="300" fill="#2E1065"/>
+                  <circle cx="200" cy="150" r="100" fill="#7C3AED" opacity="0.3"/>
+                  <!-- Rocket / Lightning Bolt -->
+                  <path d="M 200 70 L 225 130 H 195 L 215 190 L 165 140 H 190 Z" fill="#FBBF24"/>
+                  <circle cx="150" cy="90" r="3" fill="#A78BFA"/>
+                  <circle cx="250" cy="80" r="4" fill="#A78BFA"/>
+                  <circle cx="270" cy="140" r="2" fill="#A78BFA"/>
+                  <text x="125" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="18" fill="#DDD6FE">BUILDATHON '26</text>
+                </svg>
+              </div>
+              <div class="event-body">
+                <div class="event-meta">
+                  <span class="event-date">06 DEC</span>
+                  <span class="event-type">Hackathon</span>
+                </div>
+                <h3 class="event-title">Buildathon @ MMMUT</h3>
+                <p class="event-desc">
+                  A collaborative building experience where students turn ideas into working prototypes.
+                </p>
+                <button class="btn-card" data-event="buildathon" aria-label="Register for Buildathon at MMMUT">
+                  <span>Register</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10: COMMUNITY CTA -->
+      <section id="join" class="section-wrapper" style="padding-top: 2rem;">
+        <div class="container">
+          <div class="cta-box">
+            <h2>Your Next Project Starts With One Conversation.</h2>
+            <p>Meet developers. Learn together. Build something meaningful.</p>
+
+            <div class="cta-buttons-row">
+              <a href="https://chat.whatsapp.com/LKWEOfb7UjY9ARnnowM44U?s=cl&p=a&ilr=1" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                <!-- WhatsApp SVG Icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.276-.101-.477-.15-.678.15-.2.301-.778.979-.954 1.18-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.897-.799-1.502-1.787-1.678-2.088-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.301.301-.501.101-.2.05-.376-.025-.527-.075-.15-.678-1.634-.929-2.238-.244-.588-.492-.508-.678-.518l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.511c0 1.482 1.08 2.912 1.23 3.113.15.201 2.124 3.243 5.146 4.548.719.311 1.28.497 1.718.636.722.23 1.378.197 1.898.12.578-.088 1.78-.727 2.03-1.43.251-.703.251-1.305.176-1.43-.075-.125-.276-.201-.577-.351z"/>
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 1.826.49 3.538 1.343 5.013L2 22l5.127-1.314A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.17 8.17 0 0 1-4.223-1.168l-.303-.18-3.04.78.81-2.934-.197-.315A8.188 8.188 0 1 1 12 20.2z"/>
+                </svg>
+                <span>Join GDG MMMUT</span>
+              </a>
+
+              <a href="https://www.linkedin.com/company/dscmmmut/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+                <!-- LinkedIn SVG Icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>Follow on LinkedIn</span>
+              </a>
+
+              <a href="https://www.instagram.com/gdgmmmut?igsh=Y3EydHF3NXo0YWgz" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+                <!-- Instagram SVG Icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span>Follow on Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 11: CONTACT SECTION -->
+      <section id="contact" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Get in Touch</p>
+            <h2 class="section-title">Let's Build Together.</h2>
+            <p class="section-subtitle">
+              Have an idea, want to collaborate, or simply want to become part of the community? Connect with GDG on Campus MMMUT.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left: Community Metadata -->
+            <div class="contact-info-card">
+              <div class="contact-meta-item">
+                <div class="meta-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <h4>Community</h4>
+                  <p>GDG on Campus MMMUT</p>
+                </div>
+              </div>
+
+              <div class="contact-meta-item">
+                <div class="meta-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <h4>University</h4>
+                  <p>Madan Mohan Malaviya University of Technology</p>
+                </div>
+              </div>
+
+              <div class="contact-meta-item">
+                <div class="meta-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <h4>Location</h4>
+                  <p>Gorakhpur, Uttar Pradesh, India</p>
+                </div>
+              </div>
+
+              <div class="contact-meta-item">
+                <div class="meta-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <h4>Email Contact</h4>
+                  <p><a href="mailto:gdg.mmmut.official@gmail.com" class="contact-email-link" aria-label="Send email to gdg.mmmut.official@gmail.com">gdg.mmmut.official@gmail.com</a></p>
+                  <span class="meta-demo-tag">Official community mailbox — click to compose</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Contact Form -->
+            <div class="contact-form-card">
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Your Name</label>
+                  <input type="text" id="contactName" class="form-input" placeholder="e.g. Emraan Hashmi" required />
+                  <p class="form-error" id="nameError">Please enter your name (at least 2 characters).</p>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">University / Personal Email</label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="e.g. student@mmmut.ac.in" required />
+                  <p class="form-error" id="emailError">Please enter a valid email address.</p>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactInterest">Primary Track of Interest</label>
+                  <select id="contactInterest" class="form-select">
+                    <option value="Web Development">Web Development</option>
+                    <option value="AI / Machine Learning">AI / Machine Learning</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Android / Mobile">Android / Mobile</option>
+                    <option value="Open Source & DSA">Open Source &amp; DSA</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactMessage">Message or Collaboration Idea</label>
+                  <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Tell us how you'd like to collaborate, build, or join..." required></textarea>
+                  <p class="form-error" id="messageError">Please enter a message (at least 10 characters).</p>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%;">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <div class="form-success-banner" id="formSuccess">
+                  ✓ Thank you! Your message has been recorded. Our community leads will connect with you shortly!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION 12: PROFESSIONAL FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Col 1: Brand & Bio -->
+          <div class="footer-brand-col">
+            <div class="nav-brand">
+              <div class="brand-dots" aria-hidden="true">
+                <span class="dot dot-blue"></span>
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="brand-title">
+                <span class="brand-bold">GDG on Campus MMMUT</span>
+              </div>
+            </div>
+            <p>
+              Learn. Build. Connect. A student developer community at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur.
+            </p>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Community Channels -->
+          <div class="footer-col">
+            <h4>Community</h4>
+            <ul class="footer-links">
+              <li><a href="https://chat.whatsapp.com/LKWEOfb7UjY9ARnnowM44U?s=cl&p=a&ilr=1" target="_blank" rel="noopener noreferrer">WhatsApp Group</a></li>
+              <li><a href="https://www.linkedin.com/company/dscmmmut/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/gdgmmmut?igsh=Y3EydHF3NXo0YWgz" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="#join">Join Community</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 GDG on Campus MMMUT. Built by the community.</p>
+          <p>Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING AI CHAT ASSISTANT ("Ask GDG") -->
+    <div class="ai-chat-dock">
+      <button id="aiChatTrigger" class="ai-dock-trigger" aria-label="Open GDG MMMUT AI Assistant" title="Ask GDG Assistant">
+        <!-- Sparkle AI Icon with Google Accents -->
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="#4285F4"/>
+        </svg>
+      </button>
+
+      <div id="aiChatWindow" class="ai-chat-window" aria-label="GDG Community AI Chat">
+        <div class="chat-header">
+          <div class="chat-title-box">
+            <span class="dot dot-blue"></span>
+            <h4>Ask GDG MMMUT AI</h4>
+          </div>
+          <button id="aiChatClose" class="chat-close-btn" aria-label="Close AI Chat">✕</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-msg bot">
+            Hey developer! 👋 I'm your GDG on Campus MMMUT assistant. Ask me anything about upcoming workshops, the MMMUT Buildathon, project tracks, or how to join our WhatsApp group!
+          </div>
+        </div>
+
+        <div class="chat-starter-chips">
+          <button class="chip-btn" data-query="What events are coming up?">Upcoming events?</button>
+          <button class="chip-btn" data-query="How do I join the WhatsApp group?">Join WhatsApp</button>
+          <button class="chip-btn" data-query="What project tracks are available?">Project tracks</button>
+        </div>
+
+        <form id="chatForm" class="chat-input-bar">
+          <input type="text" id="chatInput" class="chat-input" placeholder="Ask a question..." required />
+          <button type="submit" class="chat-send-btn" aria-label="Send Message">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL OVERLAY (FOR PROJECT & EVENT DETAILS) -->
+    <div id="modalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content" id="modalContent">
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal window">✕</button>
+        <div id="modalDynamicBody">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla JavaScript Entry Point -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
